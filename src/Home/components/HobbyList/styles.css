@@ -1,0 +1,10 @@
+ul.hobby-list > li {
+    font-size: 25px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin-top: 10px; 
+}
+
+.active {
+    color: red;
+}
