@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addNewHobby, setActiveHobby } from "../../redux/actions/hobby";
 import HobbyList from "../components/HobbyList";
+import store from "../../redux/store/store.js";
 
 HomePage.propTypes = {};
 
@@ -29,6 +30,8 @@ function HomePage(props) {
     console.log(activeHobbyId);
     dispatch(action);
   }
+  const state = store.getState();
+  console.log("getState", state);
   console.log("activeId on Store", activeId);
   return (
     <div className="home-page">
